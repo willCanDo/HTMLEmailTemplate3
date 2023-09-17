@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insight HTML Email</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			background-color: #cccccc;
+		}
+		table {
+			border-spacing: 0;
+		}
+		td {
+			padding: 0;
+		}
+		img {
+			border: 0;
+		}
+
+		
+		.wrapper{
+			/* To ensure that the wrapper stays at 100% */
+			/* This makes sure that it stays within the width of mobile devices and email clients */
+			width: 100%;
+			/* to make sure that the table stays within the wrapper class we added in the center tag */
+			table-layout: fixed;
+			background-color: #cccccc;
+			padding-bottom: 60px;
+		}
+		.main{
+			background-color: #ffffff;
+			/* for wider email clients we need margin 0 auto to center the email template */
+			margin: 0 auto;
+			width:100%;
+			/* standard width for email template design is 600px */
+			max-width: 600px;
+			/* to get rid of spacing on the edges of the template */
+			border-spacing: 0;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			color: #4a4a4a;
+
+		}
+		.two-columns{
+			text-align: center;
+			font-size: 0;
+		}
+		
+		.two-columns .column{
+			/* this along with the above's text- align center centers everything in the two-column and column class */
+			width:100%;
+			max-width: 300px;
+			/* for them to display inline */
+			display:inline-block;
+			/* for them to display on top of each other on smaller screens*/
+			vertical-align: top;
+		}
+		.button{
+			background-color: #289dcf;
+			color: #ffffff;
+			text-decoration: none;
+			padding:12px 20px;
+			font-weight: bold;
+			border-radius: 20px;
+		}
+		.three-columns{
+			text-align: center;
+			font-size: 0;
+			padding: 35px 0 20px;
+
+		}
+		.three-columns .column{
+			/* this along with the above's text- align center centers everything in the three-column and column class */
+			width:100%;
+			max-width: 200px;
+			/* for them to display inline */
+			display:inline-block;
+			/* for them to display on top of each other on smaller screens*/
+			vertical-align: top;
+		}
+		.three-columns .padding{
+			padding:15px;
+		}
+		.three-columns .content{
+			font-size: 15px;
+			line-height: 20px;
+
+		}
+		/* there is no space between the following two because they are inside of the same element */
+		.two-columns.last{
+			padding:35px 0;
+		}
+		.two-columns .padding{
+			padding:20px;
+		}
+		.two-columns .content{
+			font-size: 15px;
+			line-height: 20px;
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+<!-- To center the email template in a browser as well as email clients  -->
+<center class="wrapper">
+	<!-- Table that will contain the entire design -->
+	<!-- width is 100% so that it takes up 100% of the window -->
+	<table class="main" width="100%">
+
+<!-- BLUE BORDER -->
+
+<tr>
+	<!-- inline styling for blue background; height="8" is for the bar at the very top -->
+	<td height="8" style="background-color: #289dcf;"></td>
+</tr>
+<!-- LOGO SECTION -->
+<!-- we need tr>td>table because there will be multiple columns -->
+		<tr>
+			<td style="padding: 14px 0 4px">
+				<table width="100%">
+					<!-- for spacing around the logo and the icons -->
+					<tr>
+						<td class="two-columns">
+							<!-- for the logo and the social media icons -->
+							<!-- this is the first column; the one for the Insight logo -->
+							<table class="column">
+								<tr>
+									<!-- for padding around the logo -->
+									<td style="padding: 0 62px 10px">
+										<a href="#"><img src="img/insight.png" 
+											alt="Logo" width="180" title="Logo"></a>
+
+									</td>
+								</tr>
+							</table>
+							<!-- this is the second column; the one for the social media icons -->
+							<table class="column">
+								<tr>
+									<!-- for padding around the socail media icons  -->
+									<td style="padding: 10px 68px">
+										<a href="#"><img src="img/circle-facebook.png" 
+											alt="socials" width="32"></a>
+										<a href="#"><img src="img/circle-instagram.png" 
+											alt="socials" width="32"></a>
+										<a href="#"><img src="img/circle-linkedin.png" 
+											alt="socials" width="32"></a>
+										<a href="#"><img src="img/circle-twitter.png" 
+											alt="socials" width="32"></a>
+										<a href="#"><img src="img/circle-youtube.png" 
+											alt="socials" width="32"></a>
+
+									</td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+
+<!-- BANNER IMAGE -->
+		<tr>
+			<td>
+				<a href="#"><img src="img/banner.jpg"
+					alt="banner" width="600" 
+					style="max-width:100%;"></a>
+					<!-- the above max-width is so that the banner will flex with the window width -->
+			</td>
+		</tr>
+
+<!-- TITLE, TEXT & BUTTON -->
+		<tr>
+			<td style="padding: 5px 0 50px;">
+				<table width="100%">
+					<tr>
+						<!-- To center the text -->
+						<td style="text-align: center; padding: 15px;">
+							<p style="font-size: 20px; font-weight: bold;">
+								HTML Email Template <strong style="color:#289dcf;">
+									Course</strong></p>
+							
+							<p style="font-size: 15px; line-height: 23px; padding: 5px 0 15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, 
+								nam aperiam voluptate nesciunt itaque, recusandae sed architecto placeat 
+								deleniti quis culpa accusantium voluptates, ipsa doloremque modi officia animi. 
+								Architecto, esse.</p>
+							<a href="#" class="button">View Course</a>			
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+
+<!-- BLUE BORDER -->
+
+<tr>
+	<td height="2" style="background-color: #6da0bb;"></td>
+</tr>
+<!-- THREE COLUMN SECTION -->
+		<tr>
+			<td>
+				<table width="100%">
+					<tr>
+						<td class="three-columns">
+							<table class="column">
+								<tr>
+									<td class="padding">
+										<table class="content">
+											<tr>
+												<td>
+													<a href="#"><img src="img/ecommerce.jpg" 
+														alt="ecommerce picture" width="110"
+														style="max-width:110px; border-radius: 55px;" ></a>
+												</td>
+											</tr>
+											<tr>
+												<!-- this is so that text that appears below ecommerce has some space -->
+												<td style="padding: 10px;">
+													<p style="font-weight: bold; font-size: 17px;">Ecommerce</p>
+													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+													Illum eaque distinctio possimus ullam reprehenderit minus </p>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+								</tr>
+							</table>
+
+							<table class="column">
+								<tr>
+									<td class="padding">
+										<table class="content">
+											<tr>
+												<td>
+													<a href="#"><img src="img/web-design.jpg" 
+														alt="ecommerce picture" width="110"
+														style="max-width:110px; border-radius: 55px;" ></a>
+												</td>
+											</tr>
+											<tr>
+												<!-- this is so that text that appears below ecommerce has some space -->
+												<td style="padding: 10px;">
+													<p style="font-weight: bold; font-size: 17px;">Web Design</p>
+													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+													Illum eaque distinctio possimus ullam reprehenderit minus </p>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+								</tr>
+							</table>
+
+							<table class="column">
+								<tr>
+									<td class="padding">
+										<table class="content">
+											<tr>
+												<td>
+													<a href="#"><img src="img/email-design.jpg" 
+														alt="ecommerce picture" width="110"
+														style="max-width:110px; border-radius: 55px;" ></a>
+												</td>
+											</tr>
+											<tr>
+												<!-- this is so that text that appears below ecommerce has some space -->
+												<td style="padding: 10px;">
+													<p style="font-weight: bold; font-size: 17px;">Email Design</p>
+													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+													Illum eaque distinctio possimus ullam reprehenderit minus </p>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+
+<!-- BLUE BORDER -->
+<tr>
+	<td height="2" style="background-color: #a6a8ee;"></td>
+</tr>
+
+<!-- TWO COLUMN SECTION -->
+		<tr>
+			<td>
+				<table width="100%">
+					<tr>
+						<td class="two-columns last">
+							<!-- this is for the palette picture -->
+							<table class="column">
+								<tr>
+									<td class="padding">
+										<table class="content">
+											<tr>
+												<td>
+													<a href="#"><img src="img/palette.jpg" 
+														alt="color palette" width="260"
+														style="max-width: 260px;"></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- this is for the palette text -->
+							<table class="column">
+								<tr>
+									<td class="padding">
+										<table class="content">
+											<tr>
+												<td>
+													<p style="font-size: 17px; font-weight:bold;">Create Custom Designs</p>
+													<p>Over the years we have built up a massive portfolio
+														of client website and email designs. </p>
+													<p style="padding-bottom: 15px;">We would love to share them with you,
+													get to know our work!</p>	
+													<a href="#" class="button">Read More</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+
+<!-- FOOTER SECTION -->
+		<tr>
+			<td style="background-color: #565656; color: #ffffff;">
+				<table width="100%">
+					<tr>
+						<td style="text-align: center; padding: 45px 20px;">
+							<a href="#"><img src="img/insight-white.png" alt="insight logo"
+								width="160"></a>
+							<p style="padding: 10px;">Insight HTML Email</p>
+							<p style="padding: 10px;">123 Anywhere, USA</p>
+							
+							<a href="#"><img src="img/white-facebook.png" 
+								alt="socials" width="32"></a>
+							<a href="#"><img src="img/white-instagram.png" 
+								alt="socials" width="32"></a>
+							<a href="#"><img src="img/white-linkedin.png" 
+								alt="socials" width="32"></a>
+							<a href="#"><img src="img/white-twitter.png" 
+								alt="socials" width="32"></a>
+							<a href="#"><img src="img/white-youtube.png" 
+								alt="socials" width="32"></a>
+
+							<p style="padding: 10px;">SUBSCRIBE</p>
+						</td>
+					</tr>
+
+					<tr>
+						<td height="10" style="background-color: #289dcf;"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+	</table>
+</center>
+</body>
+</html>
+
